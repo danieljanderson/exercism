@@ -5,8 +5,8 @@
 
 export const twoFer = (name) => {
   let message = ''
-  name = name.replace(/\s/g, '')
-  if(name.length>0){
+  if(name!=undefined){
+    name = name.trim()
     message = '"One for '+ name + ',one for me.'
   }
   else{
